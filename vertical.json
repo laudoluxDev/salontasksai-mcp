@@ -1,0 +1,11 @@
+{
+  "product_id": "salon",
+  "display_name": "SalonTasksAI",
+  "tool_prefix": "salontasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://salontasksai.com",
+  "billing_url": "https://salontasksai.com/buy-credits.html",
+  "support_email": "support@salontasksai.com",
+  "privacy_summary": "SalonTasksAI servers handle authentication, credits, catalog/search metadata, and licensed skill delivery. SalonTasksAI does not process the user's task content. The user's chosen AI assistant or LLM performs the task work according to that provider's privacy terms.",
+  "first_prompt": "Check my SalonTasksAI credit balance."
+}
