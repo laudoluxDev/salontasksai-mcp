@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "product_id": "salon",
+  "product_name": "SalonTasksAI",
+  "official_domain": "salontasksai.com",
+  "official_github_repo": "https://github.com/laudoluxDev/salontasksai-mcp",
+  "official_package": "@tasksai/install",
+  "installer": {
+    "preferred": "npx",
+    "npx": {
+      "command": "npx",
+      "args": [
+        "@tasksai/install",
+        "salon",
+        "--source",
+        "https://github.com/laudoluxDev/salontasksai-mcp"
+      ],
+      "requires": [
+        "node",
+        "npm",
+        "npx"
+      ]
+    }
+  },
+  "supported_clients": [
+    "claude_desktop",
+    "cursor",
+    "windsurf",
+    "codex"
+  ],
+  "auth": {
+    "method": "browser_device_flow",
+    "connect_url": "https://salontasksai.com/connect",
+    "fallback": "license_key"
+  },
+  "security": {
+    "require_domain_verification": true,
+    "require_repo_verification": true,
+    "disallow_arbitrary_manifest_commands": true,
+    "native_installer_user_approval_required": true
+  },
+  "health_check": {
+    "command": "npx",
+    "args": [
+      "@tasksai/install",
+      "salon",
+      "doctor"
+    ]
+  },
+  "uninstall": {
+    "command": "npx",
+    "args": [
+      "@tasksai/install",
+      "salon",
+      "uninstall"
+    ]
+  },
+  "support": {
+    "url": "https://salontasksai.com/support",
+    "email": "support@salontasksai.com"
+  }
+}
